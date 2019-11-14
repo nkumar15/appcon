@@ -29,3 +29,9 @@ create docker build by using following commands from root of directory
 ## How to confirm records are inserted?
 1. Execute command to see log ` kubectl logs -f <app-pod-name>`
 It shows message "INFO: Successfully inserted"
+Alternatively you can stdin in postgres container and perform select query over psql tool.
+
+
+## Further improvments
+1. Docker images can be pushed to public/private registry.
+2. Java code contains credentials hardcoded. This should be passed as k8s secrets.
